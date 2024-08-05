@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import Dashboard from "./pages/Dashboard";
+import Appointments from "./pages/Appointments";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/logout" element={<Logout />} />
+        <Route path="/appointments" element={<Appointments />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
